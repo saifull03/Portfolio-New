@@ -1,0 +1,591 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MERN Portfolio | Fresh Graduate</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              ink: "#0f172a",
+              slateSoft: "#64748b",
+              line: "#dbe4f0",
+              brand: "#0f4c81",
+              brandDeep: "#0a2f57",
+              mist: "#f7fafc",
+              card: "#ffffff",
+            },
+            boxShadow: {
+              soft: "0 20px 60px rgba(15, 23, 42, 0.08)",
+            },
+            fontFamily: {
+              monoish: [
+                "ui-monospace",
+                "SFMono-Regular",
+                "Menlo",
+                "Monaco",
+                "Consolas",
+                "Liberation Mono",
+                "Courier New",
+                "monospace",
+              ],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-slate-50 text-ink antialiased">
+    <div class="relative min-h-screen overflow-x-hidden">
+      <div
+        class="absolute inset-x-0 top-0 -z-10 h-[26rem] bg-gradient-to-b from-sky-100 via-white to-transparent"
+      ></div>
+      <div
+        class="absolute left-[-6rem] top-24 -z-10 h-56 w-56 rounded-full bg-sky-200/40 blur-3xl"
+      ></div>
+      <div
+        class="absolute right-[-4rem] top-40 -z-10 h-72 w-72 rounded-full bg-blue-200/30 blur-3xl"
+      ></div>
+
+      <header
+        class="sticky top-0 z-30 border-b border-slate-200/80 bg-white/85 backdrop-blur"
+      >
+        <div
+          class="mx-auto flex max-w-6xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8"
+        >
+          <a href="#home" class="flex items-center gap-3">
+            <div
+              class="flex h-11 w-11 items-center justify-center rounded-full border border-slate-200 bg-ink text-lg font-semibold text-white shadow-sm"
+            >
+              YN
+            </div>
+            <div>
+              <p
+                class="font-monoish text-sm font-semibold tracking-tight text-ink"
+              >
+                Saiful
+              </p>
+              <p class="text-xs text-slateSoft">MERN Stack Developer</p>
+            </div>
+          </a>
+
+          <nav class="hidden items-center gap-6 text-sm text-slateSoft md:flex">
+            <a class="transition hover:text-ink" href="#about">About</a>
+            <a class="transition hover:text-ink" href="#projects">Projects</a>
+            <a class="transition hover:text-ink" href="#skills">Skills</a>
+            <a class="transition hover:text-ink" href="#contact">Contact</a>
+          </nav>
+
+          <a
+            href="#contact"
+            class="rounded-full border border-slate-300 px-4 py-2 text-sm font-medium text-ink transition hover:border-brand hover:text-brand"
+            >Hire Me</a
+          >
+        </div>
+      </header>
+
+      <main
+        id="home"
+        class="mx-auto max-w-6xl px-4 pb-16 pt-8 sm:px-6 lg:px-8 lg:pt-12"
+      >
+        <section
+          class="rounded-[2rem] border border-slate-200 bg-white/90 p-6 shadow-soft sm:p-8 lg:p-12"
+        >
+          <div class="grid gap-10 lg:grid-cols-[1.3fr_0.9fr] lg:items-center">
+            <div>
+              <div
+                class="mb-5 inline-flex items-center gap-2 rounded-full border border-sky-200 bg-sky-50 px-4 py-2 text-xs font-medium uppercase tracking-[0.22em] text-brand"
+              >
+                <span class="h-2 w-2 rounded-full bg-emerald-500"></span>
+                Open To Opportunities
+              </div>
+
+              <h1
+                class="max-w-3xl font-monoish text-3xl font-bold leading-tight text-ink sm:text-4xl lg:text-[3.25rem]"
+              >
+                Md Saiful Islam
+                <span class="block text-brand">MERN Stack Developer</span>
+                Building clean and practical web products
+              </h1>
+
+              <p
+                class="mt-6 max-w-2xl text-base leading-8 text-slateSoft sm:text-lg"
+              >
+                I’m a Bangladesh-based junior developer focused on responsive
+                full-stack applications with React, Node.js, Express, and
+                MongoDB. I enjoy turning real-world ideas into simple, useful,
+                and polished user experiences.
+              </p>
+
+              <div class="mt-8 flex flex-wrap gap-3">
+                <a
+                  href="#projects"
+                  class="rounded-full bg-brand px-6 py-3 text-sm font-semibold text-white transition hover:bg-brandDeep"
+                  >View Projects</a
+                >
+                <a
+                  href="#contact"
+                  class="rounded-full border border-slate-300 bg-white px-6 py-3 text-sm font-semibold text-ink transition hover:border-brand hover:text-brand"
+                  >Contact Me</a
+                >
+              </div>
+
+              <div class="mt-8 flex flex-wrap gap-2">
+                <span
+                  class="rounded-full border border-slate-200 bg-slate-50 px-3 py-1.5 text-sm text-slateSoft"
+                  >MongoDB</span
+                >
+                <span
+                  class="rounded-full border border-slate-200 bg-slate-50 px-3 py-1.5 text-sm text-slateSoft"
+                  >Express.js</span
+                >
+                <span
+                  class="rounded-full border border-slate-200 bg-slate-50 px-3 py-1.5 text-sm text-slateSoft"
+                  >React</span
+                >
+                <span
+                  class="rounded-full border border-slate-200 bg-slate-50 px-3 py-1.5 text-sm text-slateSoft"
+                  >Node.js</span
+                >
+                <span
+                  class="rounded-full border border-slate-200 bg-slate-50 px-3 py-1.5 text-sm text-slateSoft"
+                  >Tailwind CSS</span
+                >
+                <span
+                  class="rounded-full border border-slate-200 bg-slate-50 px-3 py-1.5 text-sm text-slateSoft"
+                  >REST APIs</span
+                >
+              </div>
+            </div>
+
+            <div class="mx-auto w-full max-w-md">
+              <div
+                class="rounded-[2rem] border border-slate-200 bg-gradient-to-br from-slate-50 to-white p-6 shadow-soft"
+              >
+                <div class="flex items-center justify-between">
+                  <span class="text-sm font-medium text-slateSoft"
+                    >Profile Snapshot</span
+                  >
+                  <span
+                    class="rounded-full bg-emerald-50 px-3 py-1 text-xs font-semibold text-emerald-700"
+                    >Available</span
+                  >
+                </div>
+
+                <div class="mt-6 flex flex-col items-center text-center">
+                  <div
+                    class="rounded-full bg-gradient-to-br from-sky-500 via-blue-500 to-emerald-400 p-1 shadow-lg"
+                  >
+                    <img
+                      class="flex h-40 w-40 items-center justify-center rounded-full bg-slate-200 text-4xl font-bold text-brandDeep"
+                      src="images/snapshot.png"
+                      alt="img"
+                    />
+                  </div>
+                  <h2 class="mt-5 font-monoish text-2xl font-bold text-ink">
+                    Md Saiful Islam
+                  </h2>
+                  <p class="mt-2 text-sm leading-6 text-slateSoft">
+                    Passionate about building job-ready full-stack products,
+                    solving real problems, and growing with a strong engineering
+                    team.
+                  </p>
+                </div>
+
+                <div class="mt-6 grid gap-3 sm:grid-cols-2">
+                  <div
+                    class="rounded-2xl border border-slate-200 bg-white p-4 text-left"
+                  >
+                    <p
+                      class="text-xs uppercase tracking-[0.18em] text-slateSoft"
+                    >
+                      Location
+                    </p>
+                    <p class="mt-2 text-sm font-semibold text-ink">
+                      Dhaka, Bangladesh
+                    </p>
+                  </div>
+                  <div
+                    class="rounded-2xl border border-slate-200 bg-white p-4 text-left"
+                  >
+                    <p
+                      class="text-xs uppercase tracking-[0.18em] text-slateSoft"
+                    >
+                      Focus
+                    </p>
+                    <p class="mt-2 text-sm font-semibold text-ink">
+                      Frontend + Backend
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="about" class="pt-16">
+          <div class="mb-8">
+            <p
+              class="text-xs font-semibold uppercase tracking-[0.24em] text-slateSoft"
+            >
+              About
+            </p>
+            <h2
+              class="mt-3 font-monoish text-2xl font-bold text-ink sm:text-3xl"
+            >
+              A simple, clear introduction
+            </h2>
+          </div>
+
+          <div class="grid gap-6 lg:grid-cols-[1.1fr_0.9fr]">
+            <div
+              class="rounded-[1.75rem] border border-slate-200 bg-white p-6 shadow-soft sm:p-8"
+            >
+              <p class="text-base leading-8 text-slateSoft">
+                I’m a fresh graduate MERN stack developer who enjoys building
+                web applications that are responsive, useful, and easy to
+                navigate. My recent work includes platforms for NGOs, ride
+                sharing, medical services, and e-commerce, where I practiced
+                both frontend design and backend logic.
+              </p>
+              <p class="mt-5 text-base leading-8 text-slateSoft">
+                Right now, I’m looking for an entry-level software engineering
+                opportunity where I can contribute, learn fast, and keep
+                improving my ability to build reliable products for real users.
+              </p>
+            </div>
+
+            <div
+              class="rounded-[1.75rem] border border-slate-200 bg-white p-6 shadow-soft sm:p-8"
+            >
+              <h3 class="font-monoish text-xl font-bold text-ink">Known For</h3>
+              <ul class="mt-5 space-y-4 text-sm leading-7 text-slateSoft">
+                <li class="rounded-2xl bg-slate-50 px-4 py-3">
+                  Building responsive React interfaces with clean layouts and
+                  strong mobile support.
+                </li>
+                <li class="rounded-2xl bg-slate-50 px-4 py-3">
+                  Creating full-stack CRUD apps using Express, MongoDB,
+                  authentication, and APIs.
+                </li>
+                <li class="rounded-2xl bg-slate-50 px-4 py-3">
+                  Working on practical portfolio projects that reflect real
+                  product use cases.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section id="projects" class="pt-16">
+          <div
+            class="mb-8 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between"
+          >
+            <div>
+              <p
+                class="text-xs font-semibold uppercase tracking-[0.24em] text-slateSoft"
+              >
+                Portfolio
+              </p>
+              <h2
+                class="mt-3 font-monoish text-2xl font-bold text-ink sm:text-3xl"
+              >
+                Projects I’ve built
+              </h2>
+            </div>
+            <!-- <p class="max-w-xl text-sm leading-7 text-slateSoft">
+              Cards are arranged to stay readable across desktop, tablet, and
+              mobile screens with stronger spacing and clearer hierarchy.
+            </p> -->
+          </div>
+
+          <div class="grid gap-5 md:grid-cols-2">
+            <article
+              class="rounded-[1.75rem] border border-slate-200 bg-white p-6 shadow-soft transition duration-200 hover:-translate-y-1 hover:border-sky-300"
+            >
+              <div
+                class="mb-5 flex h-12 w-12 items-center justify-center rounded-2xl bg-emerald-50 text-2xl"
+              >
+                🌿
+              </div>
+              <h3 class="font-monoish text-xl font-bold text-ink">
+                NGO Website
+              </h3>
+              <p class="mt-3 text-sm leading-7 text-slateSoft">
+                A full-featured nonprofit platform with donation management,
+                volunteer registration, event sections, and an organized
+                admin-side workflow.
+              </p>
+              <div class="mt-5 flex flex-wrap gap-2">
+                <span
+                  class="rounded-full bg-emerald-50 px-3 py-1 text-xs font-semibold text-emerald-700"
+                  >React</span
+                >
+                <span
+                  class="rounded-full bg-emerald-50 px-3 py-1 text-xs font-semibold text-emerald-700"
+                  >Node.js</span
+                >
+                <span
+                  class="rounded-full bg-emerald-50 px-3 py-1 text-xs font-semibold text-emerald-700"
+                  >MongoDB</span
+                >
+              </div>
+              <a
+                href="https://github.com/saifull03/NGO"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="mt-6 inline-flex items-center rounded-full border border-slate-300 px-4 py-2 text-sm font-semibold text-ink transition hover:border-brand hover:text-brand"
+                >GitHub</a
+              >
+            </article>
+
+            <article
+              class="rounded-[1.75rem] border border-slate-200 bg-white p-6 shadow-soft transition duration-200 hover:-translate-y-1 hover:border-sky-300"
+            >
+              <div
+                class="mb-5 flex h-12 w-12 items-center justify-center rounded-2xl bg-sky-50 text-2xl"
+              >
+                🚗
+              </div>
+              <h3 class="font-monoish text-xl font-bold text-ink">
+                Ride Sharing App
+              </h3>
+              <p class="mt-3 text-sm leading-7 text-slateSoft">
+                A ride booking experience with rider and driver roles, booking
+                flow, trip history, and a dashboard designed for smooth
+                interaction.
+              </p>
+              <div class="mt-5 flex flex-wrap gap-2">
+                <span
+                  class="rounded-full bg-sky-50 px-3 py-1 text-xs font-semibold text-sky-700"
+                  >React</span
+                >
+                <span
+                  class="rounded-full bg-sky-50 px-3 py-1 text-xs font-semibold text-sky-700"
+                  >Express</span
+                >
+                <span
+                  class="rounded-full bg-sky-50 px-3 py-1 text-xs font-semibold text-sky-700"
+                  >Socket.io</span
+                >
+              </div>
+              <a
+                href="https://github.com/saifull03/transiqo"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="mt-6 inline-flex items-center rounded-full border border-slate-300 px-4 py-2 text-sm font-semibold text-ink transition hover:border-brand hover:text-brand"
+                >GitHub</a
+              >
+            </article>
+
+            <article
+              class="rounded-[1.75rem] border border-slate-200 bg-white p-6 shadow-soft transition duration-200 hover:-translate-y-1 hover:border-sky-300"
+            >
+              <div
+                class="mb-5 flex h-12 w-12 items-center justify-center rounded-2xl bg-rose-50 text-2xl"
+              >
+                🏥
+              </div>
+              <h3 class="font-monoish text-xl font-bold text-ink">
+                Medical Tourism
+              </h3>
+              <p class="mt-3 text-sm leading-7 text-slateSoft">
+                A service platform connecting patients with hospitals, doctors,
+                appointments, and travel-related information in one flow.
+              </p>
+              <div class="mt-5 flex flex-wrap gap-2">
+                <span
+                  class="rounded-full bg-rose-50 px-3 py-1 text-xs font-semibold text-rose-700"
+                  >php</span
+                >
+                <span
+                  class="rounded-full bg-rose-50 px-3 py-1 text-xs font-semibold text-rose-700"
+                  >Laravel</span
+                >
+                <span
+                  class="rounded-full bg-rose-50 px-3 py-1 text-xs font-semibold text-rose-700"
+                  >JavaScript</span
+                >
+              </div>
+              <a
+                href="https://github.com/saifull03/medtour"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="mt-6 inline-flex items-center rounded-full border border-slate-300 px-4 py-2 text-sm font-semibold text-ink transition hover:border-brand hover:text-brand"
+                >GitHub</a
+              >
+            </article>
+
+            <article
+              class="rounded-[1.75rem] border border-slate-200 bg-white p-6 shadow-soft transition duration-200 hover:-translate-y-1 hover:border-sky-300"
+            >
+              <div
+                class="mb-5 flex h-12 w-12 items-center justify-center rounded-2xl bg-amber-50 text-2xl"
+              >
+                🛍️
+              </div>
+              <h3 class="font-monoish text-xl font-bold text-ink">
+                Rosewood Fashion Shop
+              </h3>
+              <p class="mt-3 text-sm leading-7 text-slateSoft">
+                An e-commerce project with product browsing, cart and checkout
+                flow, order tracking, and admin controls for products and sales.
+              </p>
+              <div class="mt-5 flex flex-wrap gap-2">
+                <span
+                  class="rounded-full bg-amber-50 px-3 py-1 text-xs font-semibold text-amber-700"
+                  >React</span
+                >
+                <span
+                  class="rounded-full bg-amber-50 px-3 py-1 text-xs font-semibold text-amber-700"
+                  >MongoDB</span
+                >
+                <span
+                  class="rounded-full bg-amber-50 px-3 py-1 text-xs font-semibold text-amber-700"
+                  >Stripe</span
+                >
+              </div>
+              <a
+                href="https://github.com/saifull03/rosewood-main"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="mt-6 inline-flex items-center rounded-full border border-slate-300 px-4 py-2 text-sm font-semibold text-ink transition hover:border-brand hover:text-brand"
+                >GitHub</a
+              >
+            </article>
+          </div>
+        </section>
+
+        <section id="skills" class="pt-16">
+          <div class="mb-8">
+            <p
+              class="text-xs font-semibold uppercase tracking-[0.24em] text-slateSoft"
+            >
+              Technical Skills
+            </p>
+            <h2
+              class="mt-3 font-monoish text-2xl font-bold text-ink sm:text-3xl"
+            >
+              What I work with
+            </h2>
+          </div>
+
+          <div class="grid gap-5 md:grid-cols-3">
+            <div
+              class="rounded-[1.75rem] border border-slate-200 bg-white p-6 shadow-soft"
+            >
+              <h3 class="font-monoish text-lg font-bold text-ink">Frontend</h3>
+              <ul class="mt-4 space-y-3 text-sm text-slateSoft">
+                <li>React.js</li>
+                <li>JavaScript (ES6+)</li>
+                <li>HTML5 / CSS3</li>
+                <li>Tailwind CSS</li>
+                <li>Responsive UI Design</li>
+              </ul>
+            </div>
+
+            <div
+              class="rounded-[1.75rem] border border-slate-200 bg-white p-6 shadow-soft"
+            >
+              <h3 class="font-monoish text-lg font-bold text-ink">Backend</h3>
+              <ul class="mt-4 space-y-3 text-sm text-slateSoft">
+                <li>Node.js</li>
+                <li>Express.js</li>
+                <li>REST APIs</li>
+                <li>JWT Authentication</li>
+                <li>Socket.io</li>
+              </ul>
+            </div>
+
+            <div
+              class="rounded-[1.75rem] border border-slate-200 bg-white p-6 shadow-soft"
+            >
+              <h3 class="font-monoish text-lg font-bold text-ink">
+                Tools & Database
+              </h3>
+              <ul class="mt-4 space-y-3 text-sm text-slateSoft">
+                <li>MongoDB / Mongoose</li>
+                <li>Git & GitHub</li>
+                <li>Postman</li>
+                <li>VS Code</li>
+                <li>Vercel / Render</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section id="contact" class="pt-16">
+          <div
+            class="rounded-[2rem] border border-slate-200 bg-white p-6 shadow-soft sm:p-8 lg:p-10"
+          >
+            <div class="grid gap-8 lg:grid-cols-[1fr_0.9fr] lg:items-center">
+              <div>
+                <p
+                  class="text-xs font-semibold uppercase tracking-[0.24em] text-slateSoft"
+                >
+                  Contact
+                </p>
+                <h2
+                  class="mt-3 font-monoish text-2xl font-bold text-ink sm:text-3xl"
+                >
+                  Let’s build something meaningful
+                </h2>
+                <p class="mt-4 max-w-xl text-sm leading-7 text-slateSoft">
+                  If you’re hiring for a junior frontend or full-stack role, I’d
+                  love to connect. I’m ready to learn quickly, contribute
+                  consistently, and grow with a good team.
+                </p>
+              </div>
+
+              <div class="grid gap-3">
+                <div
+                  class="rounded-2xl bg-slate-50 px-4 py-4 text-sm text-slateSoft"
+                >
+                  <span class="font-semibold text-ink">Email:</span>
+                  <a
+                    href="mailto:mdsaifulislam22203@gmail.com"
+                    class="transition hover:text-brand"
+                    >mdsaifulislam22203@gmail.com</a
+                  >
+                </div>
+                <div
+                  class="rounded-2xl bg-slate-50 px-4 py-4 text-sm text-slateSoft"
+                >
+                  <span class="font-semibold text-ink">GitHub:</span>
+                  <a
+                    href="https://github.com/saifull03"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="transition hover:text-brand"
+                    >https://github.com/saifull03</a
+                  >
+                </div>
+                <div
+                  class="rounded-2xl bg-slate-50 px-4 py-4 text-sm text-slateSoft"
+                >
+                  <span class="font-semibold text-ink">LinkedIn:</span>
+                  <a
+                    href="https://www.linkedin.com/in/saifull03/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="transition hover:text-brand"
+                    >https://www.linkedin.com/in/saifull03/</a
+                  >
+                </div>
+                <div
+                  class="rounded-2xl bg-slate-50 px-4 py-4 text-sm text-slateSoft"
+                >
+                  <span class="font-semibold text-ink">Location:</span> Dhaka,
+                  Bangladesh
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
