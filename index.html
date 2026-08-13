@@ -113,7 +113,7 @@
               <p
                 class="mt-6 max-w-2xl text-base leading-8 text-slateSoft sm:text-lg"
               >
-                I’m a Bangladesh-based developer and an expert in both Laravel and the MERN stack (React, Node.js, Express, and MongoDB). I enjoy turning real-world ideas into simple, useful, and polished user experiences.
+                I’m a Bangladesh-based developer, a passionate Linux user, and an expert in both Laravel and the MERN stack (React, Node.js, Express, and MongoDB). I enjoy turning real-world ideas into simple, useful, and polished user experiences.
               </p>
 
               <div class="mt-8 flex flex-wrap gap-3">
@@ -127,6 +127,16 @@
                   class="rounded-full border border-slate-300 bg-white px-6 py-3 text-sm font-semibold text-ink transition hover:border-brand hover:text-brand"
                   >Contact Me</a
                 >
+                <a
+                  href="MD_SAIFUL_ISLAM_RESUME.pdf"
+                  download="MD_SAIFUL_ISLAM_RESUME.pdf"
+                  class="rounded-full border border-slate-300 bg-white px-6 py-3 text-sm font-semibold text-ink transition hover:border-brand hover:text-brand inline-flex items-center gap-2"
+                >
+                  <svg class="h-4 w-4 text-slateSoft" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                  </svg>
+                  Resume
+                </a>
               </div>
 
               <div class="mt-8 flex flex-wrap gap-2">
@@ -161,6 +171,10 @@
                 <span
                   class="rounded-full border border-slate-200 bg-slate-50 px-3 py-1.5 text-sm text-slateSoft"
                   >REST APIs</span
+                >
+                <span
+                  class="rounded-full border border-slate-200 bg-slate-50 px-3 py-1.5 text-sm text-slateSoft"
+                  >Linux</span
                 >
               </div>
             </div>
@@ -406,72 +420,46 @@
                 🏥
               </div>
               <h3 class="font-monoish text-xl font-bold text-ink">
-                Medical Tourism
+                MedTour Services
               </h3>
               <p class="mt-3 text-sm leading-7 text-slateSoft">
-                A service platform connecting patients with hospitals, doctors,
-                appointments, and travel-related information in one flow.
+                MedTour Services is a comprehensive, multi-role web-based application designed to bridge the gap between world-class medical healthcare and international travel support, handling patients, appointments, hotels, transport, and visas.
               </p>
               <div class="mt-5 flex flex-wrap gap-2">
                 <span
                   class="rounded-full bg-rose-50 px-3 py-1 text-xs font-semibold text-rose-700"
-                  >php</span
+                  >PHP 8.x</span
                 >
                 <span
                   class="rounded-full bg-rose-50 px-3 py-1 text-xs font-semibold text-rose-700"
-                  >Laravel</span
+                  >MySQL</span
                 >
                 <span
                   class="rounded-full bg-rose-50 px-3 py-1 text-xs font-semibold text-rose-700"
-                  >JavaScript</span
+                  >Tailwind CSS</span
+                >
+                <span
+                  class="rounded-full bg-rose-50 px-3 py-1 text-xs font-semibold text-rose-700"
+                  >Vanilla JS</span
                 >
               </div>
-              <a
-                href="https://github.com/saifull03/medtour"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="mt-6 inline-flex items-center rounded-full border border-slate-300 px-4 py-2 text-sm font-semibold text-ink transition hover:border-brand hover:text-brand"
-                >GitHub</a
-              >
+              <div class="mt-6 flex flex-wrap gap-2.5">
+                <a
+                  href="https://github.com/saifull03/medtour"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="inline-flex items-center rounded-full border border-slate-300 px-4 py-2 text-sm font-semibold text-ink transition hover:border-brand hover:text-brand"
+                  >GitHub</a
+                >
+                <button
+                  onclick="openMedtourModal()"
+                  class="inline-flex items-center rounded-full bg-slate-900 px-4 py-2 text-sm font-semibold text-white transition hover:bg-brand"
+                >
+                  View Details
+                </button>
+              </div>
             </article>
 
-            <article
-              class="rounded-[1.75rem] border border-slate-200 bg-white p-6 shadow-soft transition duration-200 hover:-translate-y-1 hover:border-sky-300"
-            >
-              <div
-                class="mb-5 flex h-12 w-12 items-center justify-center rounded-2xl bg-amber-50 text-2xl"
-              >
-                🛍️
-              </div>
-              <h3 class="font-monoish text-xl font-bold text-ink">
-                Rosewood Fashion Shop
-              </h3>
-              <p class="mt-3 text-sm leading-7 text-slateSoft">
-                An e-commerce project with product browsing, cart and checkout
-                flow, order tracking, and admin controls for products and sales.
-              </p>
-              <div class="mt-5 flex flex-wrap gap-2">
-                <span
-                  class="rounded-full bg-amber-50 px-3 py-1 text-xs font-semibold text-amber-700"
-                  >React</span
-                >
-                <span
-                  class="rounded-full bg-amber-50 px-3 py-1 text-xs font-semibold text-amber-700"
-                  >MongoDB</span
-                >
-                <span
-                  class="rounded-full bg-amber-50 px-3 py-1 text-xs font-semibold text-amber-700"
-                  >Stripe</span
-                >
-              </div>
-              <a
-                href="https://github.com/saifull03/rosewood-main"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="mt-6 inline-flex items-center rounded-full border border-slate-300 px-4 py-2 text-sm font-semibold text-ink transition hover:border-brand hover:text-brand"
-                >GitHub</a
-              >
-            </article>
           </div>
         </section>
 
@@ -529,6 +517,7 @@
                 <li>Postman</li>
                 <li>VS Code</li>
                 <li>Vercel / Render</li>
+                <li>Linux (Ubuntu/Debian) & Bash</li>
               </ul>
             </div>
           </div>
@@ -1064,6 +1053,154 @@ transiQo/
       </div>
     </div>
 
+    <!-- MedTour Project Details Modal -->
+    <div
+      id="medtour-modal"
+      class="fixed inset-0 z-50 flex items-center justify-center p-4 opacity-0 pointer-events-none transition-all duration-300 bg-slate-900/60 backdrop-blur-sm"
+    >
+      <div
+        class="relative w-full max-w-4xl max-h-[85vh] overflow-y-auto rounded-[2rem] border border-slate-200 bg-white p-6 shadow-soft transition-all duration-300 transform scale-95 md:p-10"
+      >
+        <!-- Close Button -->
+        <button
+          onclick="closeMedtourModal()"
+          class="absolute right-6 top-6 flex h-10 w-10 items-center justify-center rounded-full border border-slate-200 bg-white text-slateSoft hover:border-brand hover:text-brand transition"
+        >
+          ✕
+        </button>
+
+        <div class="mb-6 flex items-center gap-3">
+          <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-rose-50 text-2xl">
+            🏥
+          </div>
+          <div>
+            <h2 class="font-monoish text-2xl font-bold text-ink">MedTour Services — Management System</h2>
+            <p class="text-xs text-rose-600 font-semibold tracking-wider uppercase mt-0.5">PHP 8.x + MySQL + Tailwind CSS</p>
+          </div>
+        </div>
+
+        <p class="text-base leading-8 text-slateSoft mb-8">
+          MedTour Services is a comprehensive, multi-role web-based application designed to bridge the gap between world-class medical healthcare and international travel support. The system manages patient registrations, specialist consultations, hospital bookings, accommodation reservations, transport scheduling, and visa processing under a unified portal.
+        </p>
+
+        <!-- Specs Badge -->
+        <div class="flex flex-wrap gap-3 mb-8 pb-8 border-b border-slate-100">
+          <div class="rounded-xl border border-slate-200 bg-slate-50 px-4 py-2.5 text-xs text-slateSoft">
+            <span class="font-bold text-ink">Language:</span> PHP 8.x
+          </div>
+          <div class="rounded-xl border border-slate-200 bg-slate-50 px-4 py-2.5 text-xs text-slateSoft">
+            <span class="font-bold text-ink">Database:</span> MySQL / MariaDB (Prepared SQL, triggers)
+          </div>
+          <div class="rounded-xl border border-slate-200 bg-slate-50 px-4 py-2.5 text-xs text-slateSoft">
+            <span class="font-bold text-ink">Frontend:</span> HTML5, Modern Vanilla JS, CSS3, Tailwind CSS CDN
+          </div>
+          <div class="rounded-xl border border-slate-200 bg-slate-50 px-4 py-2.5 text-xs text-slateSoft">
+            <span class="font-bold text-ink">License:</span> MIT
+          </div>
+        </div>
+
+        <!-- Scrollable Section Content -->
+        <div class="space-y-8 text-sm leading-7 text-slateSoft">
+          <!-- Key Features by Role -->
+          <div>
+            <h3 class="font-monoish text-lg font-bold text-ink mb-4 flex items-center gap-2">
+              <span class="text-rose-500">🔑</span> Key Features by User Role
+            </h3>
+            <div class="grid gap-6 sm:grid-cols-3">
+              <div class="rounded-2xl bg-slate-50 p-5 border border-slate-100">
+                <p class="font-bold text-ink text-sm mb-3">🙋‍♂️ Patient Portal</p>
+                <ul class="space-y-2 text-xs">
+                  <li>• Dashboard metrics for appointments, transport, visas.</li>
+                  <li>• Book doctor visits, hotel stays, airport transport.</li>
+                  <li>• Request assistance for medical entry visas.</li>
+                  <li>• Access and track booking status updates.</li>
+                </ul>
+              </div>
+              <div class="rounded-2xl bg-slate-50 p-5 border border-slate-100">
+                <p class="font-bold text-ink text-sm mb-3">👨‍⚕️ Doctor Portal</p>
+                <ul class="space-y-2 text-xs">
+                  <li>• Outline doctor specialization, experience, and fees.</li>
+                  <li>• View/manage patient appointments and status.</li>
+                  <li>• Tracking of total appointments & upcoming sessions.</li>
+                </ul>
+              </div>
+              <div class="rounded-2xl bg-slate-50 p-5 border border-slate-100">
+                <p class="font-bold text-ink text-sm mb-3">🛡️ Administrative Portal</p>
+                <ul class="space-y-2 text-xs">
+                  <li>• Complete logistics control of hotel, transport, hospital.</li>
+                  <li>• Action and change status of bookings.</li>
+                  <li>• Account provision, registrations, and profile verification.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project Structure -->
+          <div>
+            <h3 class="font-monoish text-lg font-bold text-ink mb-4 flex items-center gap-2">
+              <span class="text-rose-500">📂</span> Project Structure
+            </h3>
+            <pre class="bg-slate-900 text-slate-100 rounded-xl p-4 text-xs font-mono overflow-x-auto">
+├── index.php                 # Application Main Landing Page
+├── nav_bar.php               # Shared navigation layout component
+├── mt_db.sql                 # Database schema & sample seed data
+├── login_user.php / signup_user.php     # Patient login/signup portals
+├── welcome.php               # Patient dashboard
+├── login_doctor.php / signup_doctor.php # Doctor login/signup portals
+├── welcome_doctor.php        # Doctor dashboard
+├── login_admin.php / signup_admin.php   # Admin login/signup portals
+├── welcome_admin.php         # Admin dashboard control center
+├── hotel.php / transport.php # Hotel, transport, hospital, visa forms
+├── submit_hotel.php / submit_transport.php # Submission form handlers
+├── hotel_bookings.php / transport_bookings.php # Patient booking managers
+└── view_admin_hotel.php / view_admin_transport.php # Admin managers
+</pre>
+          </div>
+
+          <!-- Setup & Installation -->
+          <div>
+            <h3 class="font-monoish text-lg font-bold text-ink mb-4 flex items-center gap-2">
+              <span class="text-rose-500">🚀</span> Installation & Setup Guide
+            </h3>
+            <div class="space-y-4">
+              <div>
+                <p class="font-semibold text-ink text-sm">Prerequisites</p>
+                <p class="text-xs">Ensure you have a local PHP web server environment installed (XAMPP for Windows, MAMP for macOS, LAMP stack for Linux).</p>
+              </div>
+              <div>
+                <p class="font-semibold text-ink text-sm">Step 1: Place the Project</p>
+                <p class="text-xs mb-1">Clone or download the project and place it inside the document root of your local server:</p>
+                <pre class="bg-slate-900 text-slate-100 rounded-xl p-3 text-xs font-mono overflow-x-auto">/opt/lampp/htdocs/medtour  (or C:\xampp\htdocs\medtour)</pre>
+              </div>
+              <div>
+                <p class="font-semibold text-ink text-sm">Step 2: Set Up MySQL Database</p>
+                <ul class="list-disc pl-5 text-xs space-y-1">
+                  <li>Start Apache and MySQL from XAMPP Control Panel.</li>
+                  <li>Navigate to phpMyAdmin (http://localhost/phpmyadmin).</li>
+                  <li>Create a new database named <strong class="text-ink">mt_db</strong>.</li>
+                  <li>Click on the Import tab, select <strong class="text-ink">mt_db.sql</strong> from the project root, and click Go.</li>
+                </ul>
+              </div>
+              <div>
+                <p class="font-semibold text-ink text-sm">Step 3: Run the Application</p>
+                <p class="text-xs mb-1">Navigate to the entrypoint URL on your browser:</p>
+                <pre class="bg-slate-900 text-slate-100 rounded-xl p-3 text-xs font-mono">http://localhost/medtour/index.php</pre>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-8 pt-6 border-t border-slate-100 flex justify-end">
+          <button
+            onclick="closeMedtourModal()"
+            class="rounded-full bg-slate-950 px-6 py-3 text-sm font-semibold text-white transition hover:bg-brand"
+          >
+            Close
+          </button>
+        </div>
+      </div>
+    </div>
+
     <script>
       function openInventoryModal() {
         const modal = document.getElementById('inventory-modal');
@@ -1095,11 +1232,27 @@ transiQo/
         document.body.classList.remove('overflow-hidden');
       }
 
+      function openMedtourModal() {
+        const modal = document.getElementById('medtour-modal');
+        modal.classList.remove('opacity-0', 'pointer-events-none');
+        modal.querySelector('div').classList.remove('scale-95');
+        modal.querySelector('div').classList.add('scale-100');
+        document.body.classList.add('overflow-hidden');
+      }
+      function closeMedtourModal() {
+        const modal = document.getElementById('medtour-modal');
+        modal.classList.add('opacity-0', 'pointer-events-none');
+        modal.querySelector('div').classList.remove('scale-100');
+        modal.querySelector('div').classList.add('scale-95');
+        document.body.classList.remove('overflow-hidden');
+      }
+
       // Close modal on escape key or clicking outside
       window.addEventListener('keydown', (e) => {
         if (e.key === 'Escape') {
           closeInventoryModal();
           closeTransiqoModal();
+          closeMedtourModal();
         }
       });
       document.getElementById('inventory-modal').addEventListener('click', (e) => {
@@ -1110,6 +1263,11 @@ transiQo/
       document.getElementById('transiqo-modal').addEventListener('click', (e) => {
         if (e.target === document.getElementById('transiqo-modal')) {
           closeTransiqoModal();
+        }
+      });
+      document.getElementById('medtour-modal').addEventListener('click', (e) => {
+        if (e.target === document.getElementById('medtour-modal')) {
+          closeMedtourModal();
         }
       });
     </script>
