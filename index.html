@@ -76,6 +76,7 @@
             <a class="transition hover:text-ink" href="#about">About</a>
             <a class="transition hover:text-ink" href="#projects">Projects</a>
             <a class="transition hover:text-ink" href="#skills">Skills</a>
+            <a class="transition hover:text-ink" href="#publications">Publications</a>
             <a class="transition hover:text-ink" href="#contact">Contact</a>
           </nav>
 
@@ -104,10 +105,10 @@
               </div>
 
               <h1
-                class="max-w-3xl font-monoish text-3xl font-bold leading-tight text-ink sm:text-4xl lg:text-[3.25rem]"
+                class="max-w-3xl font-monoish text-3xl font-bold leading-normal text-ink sm:text-4xl lg:text-[3.25rem] lg:leading-[1.2]"
               >
                 Md Saiful Islam
-                <span class="block text-brand">Full Stack Web Developer</span>
+                <span class="block text-brand mt-3 sm:mt-4">Full Stack Web Developer</span>
               </h1>
 
               <p
@@ -492,7 +493,7 @@
             </h2>
           </div>
 
-          <div class="grid gap-5 md:grid-cols-3">
+          <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
             <div
               class="rounded-[1.75rem] border border-slate-200 bg-white p-6 shadow-soft"
             >
@@ -535,6 +536,95 @@
                 <li>Linux (Ubuntu/Debian) & Bash</li>
               </ul>
             </div>
+
+            <div
+              class="rounded-[1.75rem] border border-slate-200 bg-white p-6 shadow-soft"
+            >
+              <h3 class="font-monoish text-lg font-bold text-ink">
+                Learning
+              </h3>
+              <ul class="mt-4 space-y-3 text-sm text-slateSoft">
+                <li>Python</li>
+                <li>Machine Learning / AI</li>
+                <li>Docker & DevOps Basics</li>
+                <li>Next.js</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section id="publications" class="pt-16">
+          <div class="mb-8">
+            <p
+              class="text-xs font-semibold uppercase tracking-[0.24em] text-slateSoft"
+            >
+              Publications
+            </p>
+            <h2
+              class="mt-3 font-monoish text-2xl font-bold text-ink sm:text-3xl"
+            >
+              Research & Articles
+            </h2>
+          </div>
+
+          <div class="grid gap-6 md:grid-cols-2">
+            <div
+              class="rounded-[1.75rem] border border-slate-200 bg-white p-6 shadow-soft sm:p-8 flex flex-col justify-between"
+            >
+              <div>
+                <span class="inline-block rounded-full bg-blue-50 px-3 py-1 text-xs font-semibold text-blue-700 mb-4">
+                  IEEE Publication
+                </span>
+                <h3 class="font-monoish text-lg font-bold text-ink leading-snug">
+                  An Explainable Hybrid Transformer-Based Lightweight Framework for Lung Cancer Classification
+                </h3>
+                <p class="mt-4 text-sm leading-7 text-slateSoft">
+                  Proposed a lightweight hybrid MobileNetV3-Vision Transformer framework with Explainable AI (XAI) techniques for lung cancer classification from histopathological images, achieving high diagnostic accuracy and model interpretability.
+                </p>
+              </div>
+              <div class="mt-6">
+                <a
+                  href="https://ieeexplore.ieee.org/document/11429412"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="inline-flex items-center gap-2 text-sm font-semibold text-brand hover:text-brandDeep transition"
+                >
+                  View Paper
+                  <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <div
+              class="rounded-[1.75rem] border border-slate-200 bg-white p-6 shadow-soft sm:p-8 flex flex-col justify-between"
+            >
+              <div>
+                <span class="inline-block rounded-full bg-emerald-50 px-3 py-1 text-xs font-semibold text-emerald-700 mb-4">
+                  Springer Nature Publication (2026)
+                </span>
+                <h3 class="font-monoish text-lg font-bold text-ink leading-snug">
+                  Harnessing AI for Early Detection of Tomato Leaf Diseases: A Machine Learning Perspective
+                </h3>
+                <p class="mt-4 text-sm leading-7 text-slateSoft">
+                  Developed an AI-based tomato leaf disease detection system using YOLOv9 to classify multiple plant diseases, improving early diagnosis and supporting precision agriculture. Presented at the International Conference on Data Science, AI and Applications.
+                </p>
+              </div>
+              <div class="mt-6">
+                <a
+                  href="https://link.springer.com/chapter/10.1007/978-3-032-11355-9_17"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="inline-flex items-center gap-2 text-sm font-semibold text-brand hover:text-brandDeep transition"
+                >
+                  View Paper
+                  <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                  </svg>
+                </a>
+              </div>
+            </div>
           </div>
         </section>
 
@@ -570,6 +660,16 @@
                     href="mailto:mdsaifulislam22203@gmail.com"
                     class="transition hover:text-brand"
                     >mdsaifulislam22203@gmail.com</a
+                  >
+                </div>
+                <div
+                  class="rounded-2xl bg-slate-50 px-4 py-4 text-sm text-slateSoft"
+                >
+                  <span class="font-semibold text-ink">Phone:</span>
+                  <a
+                    href="tel:+8801778384700"
+                    class="transition hover:text-brand"
+                    >+8801778384700</a
                   >
                 </div>
                 <div
